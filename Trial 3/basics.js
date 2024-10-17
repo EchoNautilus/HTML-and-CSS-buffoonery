@@ -14,11 +14,11 @@ function henloo()
     // if-else statements
     if (isDepressed)
     {
-        console.log("Don't worry. You're a good boy.");
+        console.log("Don't worry. You're a good boy. :)");
     }
     else if (isDepressed == false)
     {
-        console.log("You're a bad boy. Depression is for cool kids only.")
+        console.log("You're a bad boy. Depression is for cool kids only. :(")
     }
 }
 
