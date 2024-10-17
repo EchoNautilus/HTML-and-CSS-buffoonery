@@ -1,0 +1,41 @@
+/* Global styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;          /* Light grey background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style for the h1 element */
+h1 {
+    color: black;                       /* Dark grey text color */
+}
+
+/* Style for p element */
+p {
+    color: black;
+}
+
+/* For specific, special classes */
+.darkgreenboi {
+    font-family: 'Times New Roman', serif;
+    color: #006400; /* Dark green color */
+    
+}
+
+.redboi {
+    color: red
+}
+
+/* Style for the button */
+button {
+    background-color: #007BFF;          /* Blue background */
+    color: white;                       /* White text */
+    border: 50;
+    padding: 10px 20px;                   /* Button height x width */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;          /* Darker blue on hover */
+}
