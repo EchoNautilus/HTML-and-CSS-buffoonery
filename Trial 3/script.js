@@ -14,7 +14,7 @@ const printDiv = document.createElement("div"); // Always name it "div" when mak
 document.body.appendChild(printDiv);            // appendChild() appends the specified child element (printDiv in this case) to the parent element (document.body). This means that the newly created <div> element is added to the end of the <body> element, making it part of the visible HTML structure.
 
 // Declare a variable to play that MP3 file
-const audio = new Audio("Bloodbath - Ominous Bloodvomit.mp3")
+const audio = new Audio("Bloodbath - Ominous Bloodvomit.mp3");
 
 // Lo, for I breathe life unto the littleNub!
 function handleButtonClick(event)
@@ -34,7 +34,8 @@ function handleButtonClick(event)
 // Lo, for I breathe life once more unto thee, notJustSad!
 function handleTextInput(event) {
     // Check if the user pressed Enter
-    if (event.key === "Enter") {
+    if (event.key === "Enter")
+    {
         // Log the event type
         console.log("Event Type: ", event.type);
 
@@ -45,11 +46,20 @@ function handleTextInput(event) {
         const inputValue = event.target.value.toLowerCase();
 
         // If the user types certain things, send them different things.
-        if (inputValue === "depression") {
+        if (inputValue === "depression")
+        {
             printDiv.textContent = "there, there :(";
-        } else if (inputValue === "anxiety") {
+        }
+        else if (inputValue === "anxiety")
+        {
             printDiv.textContent = "the bed is right there. Hop in, get some sleep :)";
-        } else {
+        } 
+        else
+        {
+            printDiv.textContent = "MWAHAHAHHAA";
+            // Log before playing the audio
+            console.log("Playing audio: Bloodbath - Ominous Bloodvomit");
+
             // Play the MP3 file
             audio.play();
         }
